@@ -1,4 +1,3 @@
-emacs.d
 ## Survival guide for the first week of emacs
 
 When you start using emacs for the first time, your habits fight you every inch
