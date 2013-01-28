@@ -2,6 +2,10 @@
 (setenv "PATH" (concat "/usr/local/smlnj-110.75/bin:" (getenv "PATH")))
 (setq exec-path (cons "/usr/local/smlnj-110.75/bin" exec-path))
 
+;; Use emacs navigation panel
+(add-to-list 'load-path "~/.emacs.d/emacs-nav/")
+(require 'nav)
+
 ;; Load railscasts theme. Weeee!!!
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'railscasts t)
