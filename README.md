@@ -54,7 +54,6 @@ overview of the most commonly used shortcuts to get you through this pain:
 
 * `1` Open file under cursor in 1st other window.
 * `2` Open file under cursor in 2nd other window.
-
 * `c` Copy file or directory under cursor.
 * `d` Delete file or directory under cursor (asks to confirm first).
 * `e` Edit current directory in dired.
@@ -67,8 +66,7 @@ overview of the most commonly used shortcuts to get you through this pain:
 * `q` Quit nav.
 * `r` Refresh.
 * `s` Start a shell in an emacs window in the current directory.
-* `t` Start a terminal in an emacs window in the current directory.
-      This allows programs like vi and less to run. Exit with C-d C-d.
+* `t` Start a terminal in an emacs window in the current directory. This allows programs like vi and less to run. Exit with C-d C-d.
 * `u` Go up to parent directory.
 * `!` Run shell command.
 * `[` Rotate non-nav windows counter clockwise.
