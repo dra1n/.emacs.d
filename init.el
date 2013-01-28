@@ -3,7 +3,7 @@
 (push "/usr/local/smlnj-110.75/bin" exec-path)
 (push "/usr/local/bin" exec-path)
 
-; (autoload 'run-sml "sml-proc" "Run an inferior ML process." t)
+;; Need to add it to package list
 (add-to-list 'load-path "~/.emacs.d/el-get/sml-mode")
 
 (fset 'yes-or-no-p 'y-or-n-p)
