@@ -9,11 +9,15 @@
 (setq slime-startup-animation nil)
 
 ;; SLIME
-(add-to-list 'load-path "~/.emacs.d/el-get/slime") ;; Путь к slime
+(add-to-list 'load-path "~/.emacs.d/el-get/slime")
+(setq slime-backend "~/.emacs.d/el-get/slime/swank-loader.lisp")
+;(require 'slime-autoloads)
 (require 'slime)
-(setq slime-net-coding-system 'utf-8-unix)
-(slime-setup '(slime-fancy))
-(setq slime-enable-evaluate-in-emacs t)
+(slime-setup)
+;(load-file "~/.emacs.d/el-get/slime/slime.el")
+;(setq slime-net-coding-system 'utf-8-unix)
+;(slime-setup '(slime-fancy))
+;(setq slime-enable-evaluate-in-emacs t)
 
 ;; Need to add it to package list
 (add-to-list 'load-path "~/.emacs.d/el-get/sml-mode")
