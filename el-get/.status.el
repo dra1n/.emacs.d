@@ -38,6 +38,15 @@
             (:name ruby-mode :type elpa :load "ruby-mode.el" :after
                    (progn
                      (ruby-mode-hook))))
+ (slime status "installed" recipe
+        (:name slime :description "Superior Lisp Interaction Mode for Emacs" :type github :features slime-autoloads :info "doc" :pkgname "nablaone/slime" :load-path
+               ("." "contrib")
+               :compile
+               (".")
+               :build
+               ("make -C doc slime.info")
+               :post-init
+               (slime-setup)))
  (sml-mode status "installed" recipe
            (:name sml-mode :description "SML-mode is a major Emacs mode for editing Standard ML source code." :type http-tar :options
                   ("xzf")

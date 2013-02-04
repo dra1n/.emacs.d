@@ -3,6 +3,18 @@
 (push "/usr/local/smlnj-110.75/bin" exec-path)
 (push "/usr/local/bin" exec-path)
 
+;; SBCL
+(setq inferior-lisp-program "/usr/local/bin/sbcl") ; your Lisp system
+(setq slime-lisp-implementations '((sbcl ("sbcl"))))
+(setq slime-startup-animation nil)
+
+;; SLIME
+(add-to-list 'load-path "~/.emacs.d/el-get/slime") ;; Путь к slime
+(require 'slime)
+(setq slime-net-coding-system 'utf-8-unix)
+(slime-setup '(slime-fancy))
+(setq slime-enable-evaluate-in-emacs t)
+
 ;; Need to add it to package list
 (add-to-list 'load-path "~/.emacs.d/el-get/sml-mode")
 
