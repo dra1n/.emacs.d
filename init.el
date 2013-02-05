@@ -4,7 +4,7 @@
 (push "/usr/local/bin" exec-path)
 
 ;; SBCL
-(setq inferior-lisp-program "/usr/local/bin/sbcl") ; your Lisp system
+(setq inferior-lisp-program "/usr/local/bin/sbcl --noinform --no-linedit") ; your Lisp system
 (setq slime-lisp-implementations '((sbcl ("sbcl"))))
 (setq slime-startup-animation nil)
 
